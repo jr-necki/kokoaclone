@@ -1,18 +1,30 @@
 .nav{
     position: fixed;
-    bottom:0px;
+    bottom: 0;
     width: 100%;
-    background-color:#f9f9fa;
-    padding:20px 50px;
     box-sizing: border-box;
-    border-top: 1px solid rgba(121,121,121,0.3);
-    
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    border-top:1px solid rgba(121,121,121,0.3);
 }
 .nav__list{
     display: flex;
-    justify-content: space-evenly;
-   
+    justify-content:space-between;
 }
-.nav_link{
-    color:#2e363e;
+.nav__link{
+    color: #2e363e;
+    position: relative;
+}
+.nav__btn{
+    position: relative;
+}
+.nav__notification{      
+    left: 15px;
+    bottom: 15px;
+    position: absolute;
+}
+.nav__notification-sm{      
+    left: 30px;
+    bottom: 25px;
+    position: absolute;
 }

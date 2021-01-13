@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/styles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friends -KoKoa Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends - Kokoa Clone</title>
 </head>
 
 <body>
@@ -13,33 +13,88 @@
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fas fa-wifi"></i>
-            </svg>
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
             <span>110%</span>
-            <i class="fas fa-battery-full fa-2x"></i>
+            <i class="fas fa-battery-full fa-lg"></i>
             <i class="fas fa-bolt"></i>
         </div>
     </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><i class="fas fa-cog fa-lg"></i></span>
+        </div>
+    </header>
+    <a id="friends-display-link">
+        <i class="fas fa-info-circle"></i> Friends' Names Display
+        <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+    <main class="friends-screen">
+        <div class="user-component">
+            <div class="user-component__column">
+                <img src="https://pbs.twimg.com/profile_images/885160602603110400/NDy2DF5c_400x400.jpg"
+                    class="user-component__avatar user-component__avatar--xl" />
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Whitey</h4>
+                    <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+                </div>
+            </div>
+            <div class="user-component__column"></div>
+        </div>
+        <div class="friends-screen__channel">
+            <div class="friends-screen__channel-header">
+                <span>Channel</span>
+                <i class="fas fa-chevron-up fa-xs"></i>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img src="data:image/png;base64,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"
+                        class="user-component__avatar user-component__avatar--sm" />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Nike</h4>
+                        <h4 class="user-component__title user-component__title--not-bold">
+                            Just Do it!
+                        </h4>
+                    </div>
+                </div>
+                <div class="user-component__column">
+                    <div>
+                    <span>2</span>
+                    <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__btn">
-                <a class="nav__link"href="friends.html"><i class="fas fa-user fa-2x "></i></a></li>
-            
+                <a class="nav__link" href="friends.html"><i class="fas fa-user fa-2x"></i></a>
+            </li>
             <li class="nav__btn">
-                <a class="nav_link"href="#"><i class="far fa-comment fa-2x"></i></a></li>
+                <a class="nav__link" href="chats.html">
+                    <span class="nav__notification badge">4</span>
+                    <i class="far fa-comment fa-2x"></i>
+                </a>
+            </li>
             <li class="nav__btn">
-                <a class="nav__link"href="#"><i class="fas fa-search fa-2x"></i></a></li>
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
             <li class="nav__btn">
-                <a class="nav__link"href="#"><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+                <a class="nav__link" href="more.html">
+                    <i class="fas fa-ellipsis-h fa-2x"></i>      
+                    <span class="nav__notification-sm badge-sm"></span>
+                </a>
+            </li>
         </ul>
     </nav>
-   
-    <script src="https://kit.fontawesome.com/a21d24673a.js" crossorigin="anonymous">
-    </script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
