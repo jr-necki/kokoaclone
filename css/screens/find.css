@@ -88,25 +88,26 @@
 .open-post__heart-count span{
     margin-left: 3px;
 }
+.open-post__heart-count span{
+    margin-left: :3px;
+}
 
+@keyframes heartBeat{
+    0%{
+        color: white;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.5);
+    }
+    100%{
+        color: white;
+        transform: none;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-.cog__dot{
-    background-color: tomato;
-    width: 8px;
-    height: 8px;
-    border-radius: 4px;
-    display: flex;
-    position: absolute;
-    right: 15px;
-    top: 35px;
+.open-post__heart-count:hover i{
+    will-change: transform;
+    animation: heartBeat 1s linear infinite;
 }
