@@ -21,6 +21,7 @@ body{
     color: #2e363e;
    font-family: 'Schoolbell', cursive;
    height: 1000vh;
+    cursor: url('cursor .cur'), auto;
 
 }
 .main-screen{

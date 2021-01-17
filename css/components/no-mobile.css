@@ -1,18 +1,21 @@
-#no-mobile{
-    position: absolute;
-    z-index: 99;
-    height: 100vh;
-    background-color: var(--yellow);
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-    top: 0;
+#alert{
+  top: 30;font-size: 80px;
+}
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 400vh;
+  background-color: var(--yellow);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  /*align-items: center;*/
+  font-size: 32px;
+  top: 0;
 }
 
-@media screen and (max-width:800px){
-    #no-mibile{
-        display: none;
-    }
+@media screen and (max-width: 700px) {
+  #no-mobile {
+    display: none;
+  }
 }

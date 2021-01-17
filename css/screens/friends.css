@@ -16,12 +16,13 @@
 .friends-screen{
     padding: 0px var(--horizontal-space);
 }
+.friends-screen__friends,
 .friends-screen__channel {
   margin-top: 25px;
   border-top: var(--main-border);
   padding-top: 15px;
 }
-
+.friends-screen__friends-header,
 .friends-screen__channel-header {
   margin-bottom: 30px;
   display: flex;
@@ -49,4 +50,15 @@
   font-size: 70px;
   animation: hideSplashScreen 0.4s ease-in-out forwards;
   animation-delay: 1s;
+}
+
+.hov-anim-box .animated{
+  display: none;
+}
+.hov-anim-box:hover .animated{
+  display: inline;
+}
+
+.hov-anim-box:hover .static{
+  display: none;
 }

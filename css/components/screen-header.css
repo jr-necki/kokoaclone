@@ -4,6 +4,7 @@
     align-items: center;
     padding: var(--horizontal-space);
     margin-bottom: 15px;
+   
     
 }
 .screen-header__title{
@@ -39,4 +40,45 @@
     position: absolute;
     right: 15px;
     top: 10px;
+}
+@keyframes beating{
+  0% {
+    transform: none;
+
+  }
+  50% {
+     transform: scale(2,2);
+    color: var(--yellow);
+  }
+  100%{
+    transform: none;
+  }
+
+
+}
+@keyframes playMusic{
+  from{
+    transform: none;
+  }
+  to{
+    border-color: var(--yellow);
+    transform: scale(1.5,1.5);
+   
+  }
+  
+}
+
+.fa-music:hover{
+  animation: beating 0.5s infinite;
+}
+.fa-music:focus audio{
+  color: red;
+}
+audio{
+  margin-left: 90px;
+  width: 200px;
+}
+audio:hover{
+  will-change: transform;
+  animation: playMusic 0.5s ease-in-out forwards;
 }
